@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import en from '../lang/en.json';
 import ru from '../lang/ru.json';
 import * as RNLocalize from 'react-native-localize';
@@ -14,7 +14,8 @@ const LanguageContext = React.createContext<LaguageContextType>(
 
 const languageObj = {
   en: en,
-  ru: ru,
+  //ru: ru,
+  ru: en,
 };
 
 export const LanguageContextProvider: React.FC = () => {
